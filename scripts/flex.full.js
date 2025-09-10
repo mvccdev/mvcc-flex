@@ -7,7 +7,7 @@
 	// Define our constants.
 	//
 	const _root_div  = document.getElementById("root");
-	const _root_path = "/static";
+	const _root_path = "/public";
 
 	// ======================================================
 	// _flex_init
@@ -66,8 +66,8 @@
 		//
 		return {
 			html_path	: _root + "template.html",
-			md_path		: _path + ".md?" + _time_stamp,
-			js_path		: _path + ".js?" + _time_stamp			
+			md_path		: _path + ".md?t=" + _time_stamp,
+			js_path		: _path + ".js?t=" + _time_stamp			
 		}
 	}
 
